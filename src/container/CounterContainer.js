@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import Counter from '../components/Counter';
 import { increase, decrease, setDiff } from '../modules/counter';
 
@@ -9,7 +9,7 @@ function CounterContainer() {
       number: state.counter.number,
       diff: state.counter.diff,
     };
-  });
+  }, shallowEqual);
 
   const dispatch = useDispatch();
 
