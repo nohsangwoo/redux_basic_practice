@@ -1,5 +1,12 @@
+import CounterContainer from './container/CounterContainer';
+
 function App() {
-  return <div className="App">FOR REDUX SAGA</div>;
+  return (
+    <div className="App">
+      FOR REDUX SAGA
+      <CounterContainer />
+    </div>
+  );
 }
 
 export default App;

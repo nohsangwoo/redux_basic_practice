@@ -6,6 +6,7 @@ const DECREASE = 'counter/DECREASE';
 //create action function
 export const setDiff = diff => ({
   type: SET_DIFF,
+  diff: diff,
 });
 export const increase = () => ({ type: INCREASE });
 export const decrease = () => ({
